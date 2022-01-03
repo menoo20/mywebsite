@@ -15,7 +15,7 @@
       background-position: center bottom;
       background-size: cover;
       background-attachment: fixed;
-      @include for-size(tablet-landscape-down){
+      @include for-size(big-tablets){
         background-attachment: scroll !important;
     }
     }

@@ -99,7 +99,7 @@ header .hero::after {
           transform: scale(1.01);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   header .hero::after {
     background-attachment: scroll !important;
   }
@@ -408,7 +408,7 @@ header .hero .sattelite-obj:hover {
   z-index: -1;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   #projects::before {
     background-attachment: scroll !important;
   }
@@ -498,7 +498,7 @@ header .hero .sattelite-obj:hover {
   background-attachment: fixed;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   #certificates::before {
     background-attachment: scroll !important;
   }
@@ -769,7 +769,7 @@ header .hero .sattelite-obj:hover {
   z-index: -1;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   #contact::before {
     background-attachment: scroll !important;
   }
@@ -1284,6 +1284,28 @@ header .hero .sattelite-obj:hover {
   text-decoration: none;
 }
 
+.offcanvas-body .container .small-screens-menu li:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.offcanvas-body .container .small-screens-menu li a {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Exo 2", sans-serif;
+  font-size: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+
+.offcanvas-body .container .small-screens-menu li a:hover {
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
 .slide .carousel-indicators {
   bottom: -63px;
 }
@@ -1458,6 +1480,18 @@ input[type="checkbox"]:checked ~ .checkbox__text .checkbox__text--options span.o
   border-bottom-right-radius: 12px;
   padding: 1rem 1.5rem;
   position: fixed;
+}
+
+@media (max-width: 1024px) {
+  .menu-toggler {
+    padding: 1.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 599px) {
+  .menu-toggler {
+    padding: 1rem 1.5rem;
+  }
 }
 
 .menu-toggler.active {

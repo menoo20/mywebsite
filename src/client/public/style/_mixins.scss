@@ -21,7 +21,9 @@
       @media (max-width: 900px) { @content; }
     }@else if $size == tablet-landscape-up {
       @media (min-width: 900px) { @content; }
-    } @else if $size == desktop-up {
+     } @else if $size == big-tablets {
+      @media (max-width: 1024px) { @content; }
+     }@else if $size == desktop-up {
       @media (min-width: 1024px) { @content; }
     } @else if $size == med-desktop-up {
       @media (min-width: 1380px) { @content; }
