@@ -27,6 +27,9 @@ h5{
        background-size: cover;
        background-position:center;
        background-attachment: fixed;
+       @include for-size(tablet-landscape-down){
+        background-attachment: scroll !important;
+    }
        z-index: -1;
        opacity: .8;
        transform: scale(1.01);

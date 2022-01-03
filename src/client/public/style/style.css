@@ -99,6 +99,12 @@ header .hero::after {
           transform: scale(1.01);
 }
 
+@media (max-width: 900px) {
+  header .hero::after {
+    background-attachment: scroll !important;
+  }
+}
+
 header .hero #scene {
   height: 100vh;
   z-index: 2;
@@ -402,6 +408,12 @@ header .hero .sattelite-obj:hover {
   z-index: -1;
 }
 
+@media (max-width: 900px) {
+  #projects::before {
+    background-attachment: scroll !important;
+  }
+}
+
 #projects .card-nobs:hover .items {
   visibility: visible;
 }
@@ -484,6 +496,12 @@ header .hero .sattelite-obj:hover {
   background-position: center bottom;
   background-size: cover;
   background-attachment: fixed;
+}
+
+@media (max-width: 900px) {
+  #certificates::before {
+    background-attachment: scroll !important;
+  }
 }
 
 #certificates .bubbles {
@@ -749,6 +767,12 @@ header .hero .sattelite-obj:hover {
   background-size: cover;
   background-attachment: fixed;
   z-index: -1;
+}
+
+@media (max-width: 900px) {
+  #contact::before {
+    background-attachment: scroll !important;
+  }
 }
 
 #contact a.arrow-link {
