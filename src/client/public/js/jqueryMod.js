@@ -7,6 +7,14 @@ $(function($){
         let cerImagesDiv = document.querySelector(".cert-images");
         let bigImg = document.querySelector(".big-img");
 
+        
+        $(window).on("load",(function(e) {
+            // e.preventDefault();
+            $(".loader").delay(2000).fadeOut("slow");
+          $("#overlayer").delay(2000).fadeOut("slow");
+          $("#hero").fadeIn("fast");
+        })),
+
         $(".cert-images").on("click",function (e) {
            let image =  e.target;
            let mainImgSrc = $(image).attr("src");
@@ -22,5 +30,7 @@ $(function($){
         });
          
           
-        });
-});
+        })
+
+
+})

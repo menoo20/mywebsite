@@ -6,6 +6,10 @@ const cogButton = document.querySelectorAll(".menu-toggler");
 const cogIcon = document.querySelectorAll(".fa-cog");
 const offCanvas = document.querySelector(".offcanvas");
 
+
+
+
+
 for(var i=0; i<cogButton.length; i++) {
  cogButton[i].addEventListener("mouseover", (e) => {
     e.preventDefault();
