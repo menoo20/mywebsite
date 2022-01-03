@@ -22,15 +22,22 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
          <!-- animate CSS -->
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script> -->
  
     <title>Document</title>
 <script defer src="bundle.js"></script></head>
 <body>
-  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-  <div class="elfsight-app-7a9ee436-947b-453e-979e-14a8c878c365 position-fixed elf-audio"></div>
+  <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script> -->
+  <!-- <div class="elfsight-app-7a9ee436-947b-453e-979e-14a8c878c365 position-fixed elf-audio"></div> -->
 
+  <div id="overlayer">
+  <span class="loader">
+    <span class="loader-inner"></span>
+  </span>
+  </div>
+  <!-- ##############################################################################################
+   end of the page loader 
+  ############################################################################################## -->
   <div class="menu-toggler toggler-one ps-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
     <i class="fa-solid fa-cog fa-2xl" ></i>
   </div>
@@ -51,7 +58,7 @@
     </div>
     <div class="offcanvas-body d-flex align-items-sm-center align-items-lg-start">
       <div class="container d-flex">
-        <div class="card-carousel d-none d-lg-block mt-5">
+        <!-- <div class="card-carousel d-none d-lg-block mt-5">
           <div class="card row" id="1"
         >
             <div class="image-container"   
@@ -123,13 +130,13 @@
             </div>
             <a href="#contact"><h6 class="fw-bold">Contact Us</h6></a>
           </div>
-        </div>
+        </div> -->
 
 <!-- ###################################################################################################################
     tablet menu start
 ################################################################################################################### -->
   
-        <div class="small-screens-menu d-flex align-self-center d-lg-none ">
+        <div class="small-screens-menu d-flex align-self-center mt-5">
             <ul class="row text-center justify-content-center align-items-center menu-list list-unstyled ">
               <li class="mb-5"><a href="#about">about</a></li>
               <li class="mb-5"><a href="#skills">skills</a></li>
@@ -153,7 +160,7 @@
          <div class="container">
             <ul data-relative-input="true" id="scene" class="list-unstyled  d-flex justify-content-center align-items-center">
                 <li class="layer hero-name text-center" data-depth="0">
-                     <h1 class="display-5 display-lg-4 animate__animated animate__jello animate__delay-2s">
+                     <h1 class="display-5 display-lg-4 ">
                           Mohammed Ameen
                         </h1>
                 
@@ -184,7 +191,7 @@
             </ul>
          </div>
          <div class="sattelite-obj position-absolute">
-             <img   class="img-fluid" src="./images/satellite-png-40927 (1).png" alt="sattelite">
+             <img loading="lazy"  class="img-fluid" src="./images/satellite-png-40927 (1).png" alt="sattelite">
          </div>
         </div>
     </header>
