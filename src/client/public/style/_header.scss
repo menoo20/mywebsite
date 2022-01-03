@@ -1,0 +1,103 @@
+
+header {
+height: 100vh;
+h1,h5{
+    letter-spacing: 1px;
+}
+
+h5{
+    @include for-size(tablet-portrait-down){
+        font-size:1rem;
+    }
+}
+
+.hero{
+    width: 100vw;
+    height: 100vh;
+    
+    position: relative;
+    &::after{
+       position: absolute;
+       content: "";
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background: url("../../../../images/bg-hero-2.jpg");
+       background-size: cover;
+       background-position:center;
+       background-attachment: fixed;
+       z-index: -1;
+       opacity: .8;
+       transform: scale(1.01);
+    }
+    #scene{
+      
+        height: 100vh;
+        z-index: 2;
+        .hero-name{
+         
+          padding:40px 0;
+          position: relative;
+          background: inherit;
+          &::before{
+              content: "";
+              position: absolute;
+              background:inherit;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              width: 100%;
+              box-shadow: inset 0 0 150px rgba(255,255,255,.8);
+              filter: blur(30px);
+              border-radius: 50%;
+              z-index: -1;
+          }
+        }
+    }
+    .sattelite-obj{
+        width: 150px;
+        z-index: 1;
+        right: -50%;
+        top: 10%;
+       
+        animation: obj-enter 18s linear 4s infinite normal both;
+        &:hover {
+            animation-play-state: paused;
+            cursor: pointer;
+          }
+    }
+
+}
+
+}
+
+
+@keyframes obj-enter {
+    0% {
+        right: -15%;
+        top: 10%;
+        width: 50px;
+     
+    }
+
+    90%{
+        right: 100%;
+        top: 30%;
+        transform: rotate(90deg);
+        width: 150px;
+      
+    }
+
+    100%{
+        right: 110%;
+        top: 10%;
+        transform: rotate(180deg);
+        width: 150px;
+    }
+    
+}
+
+
+

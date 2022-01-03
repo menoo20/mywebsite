@@ -1,0 +1,70 @@
+@import "globals";
+@import "header";
+@import "about";
+@import "variables";
+@import "skills";
+@import "projects";
+@import "certificates";
+@import "contacts";
+@import "mixins";
+@import "carousel";
+@import "bsCarousel";
+@import "allLamp";
+@import "elfaudio";
+
+.menu-toggler{
+    z-index: 3;
+    top:40%;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding:1rem 1.5rem;
+    position: fixed;
+    &.active{
+        padding:1rem 1.5rem;
+        border-radius: 12px;
+        background-color:white;
+    }
+    .fa-cog{
+        // color: #a3004a;
+        color: $assist;
+     }
+}
+.offcanvas{
+    
+    background: rgba(255, 255, 255, 0.05);
+    // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
+    .offcanvas-header{
+
+        a{
+            position: relative;
+            color: $assist;
+            cursor: pointer;
+         &::before{
+           content:"";
+           position: absolute;
+           width: 90%;
+           height: 80%;
+           top: 2px;
+           left: 2px;
+           background: $third-primary;
+           border-radius:50%;
+           z-index: -1;
+         }  
+    }
+    }
+ 
+    .menu-toggler{
+        right: -80px;
+    }
+    
+        border-right: none;
+    
+}
