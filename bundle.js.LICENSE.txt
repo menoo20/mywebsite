@@ -1,7 +1,5 @@
 /*! ./public/js/app.js */
 
-/*! ./public/js/carousel.js */
-
 /*! ./public/js/form.js */
 
 /*! ./public/js/jqueryMod.js */
