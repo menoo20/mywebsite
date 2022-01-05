@@ -59,48 +59,48 @@ h5{
           }
         }
     }
-    .sattelite-obj{
-        width: 150px;
-        z-index: 1;
-        right: -50%;
-        top: 10%;
+    // .sattelite-obj{
+    //     width: 150px;
+    //     z-index: 1;
+    //     right: -50%;
+    //     top: 10%;
        
-        animation: obj-enter 18s linear 4s infinite normal both;
-        &:hover {
-            animation-play-state: paused;
-            cursor: pointer;
-          }
-    }
+    //     animation: obj-enter 18s linear 4s infinite normal both;
+    //     &:hover {
+    //         animation-play-state: paused;
+    //         cursor: pointer;
+    //       }
+    // }
 
 }
 
 }
 
 
-@keyframes obj-enter {
-    0% {
-        right: -15%;
-        top: 10%;
-        width: 50px;
+// @keyframes obj-enter {
+//     0% {
+//         right: -15%;
+//         top: 10%;
+//         width: 50px;
      
-    }
+//     }
 
-    90%{
-        right: 100%;
-        top: 30%;
-        transform: rotate(90deg);
-        width: 150px;
+//     90%{
+//         right: 100%;
+//         top: 30%;
+//         transform: rotate(90deg);
+//         width: 150px;
       
-    }
+//     }
 
-    100%{
-        right: 110%;
-        top: 10%;
-        transform: rotate(180deg);
-        width: 150px;
-    }
+//     100%{
+//         right: 110%;
+//         top: 10%;
+//         transform: rotate(180deg);
+//         width: 150px;
+//     }
     
-}
-
+// }
+// 
 
 

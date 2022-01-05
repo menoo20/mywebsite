@@ -1,5 +1,5 @@
 
-var scene = document.getElementById('scene');
+const scene = document.getElementById('scene');
 var parallaxInstance = new Parallax(scene);
 
 const cogButton = document.querySelectorAll(".menu-toggler");
