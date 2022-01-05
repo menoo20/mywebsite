@@ -1,0 +1,11 @@
+/*! ./global/menu.js */
+
+/*! ./public//index/style/style.css */
+
+/*! ./public/index/js/loader.js */
+
+/*! import() */
+
+/*!*****************************!*\
+  !*** ./src/client/index.js ***!
+  \*****************************/

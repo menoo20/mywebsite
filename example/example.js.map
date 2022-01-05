@@ -1,1 +1,0 @@
-{"version":3,"file":"example/example.js","mappings":"AACgBA,SAASC,cAAc,YAE/BC,UAAY","sources":["webpack://myportfolio3/./src/client/example.js"],"sourcesContent":["\r\nconst example = document.querySelector('.example');\r\n\r\nexample.innerHTML = `<h1>no need to worry</h1>`;"],"names":["document","querySelector","innerHTML"],"sourceRoot":""}

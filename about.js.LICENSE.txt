@@ -1,0 +1,11 @@
+/*! ./global/menu.js */
+
+/*! ./public/about/js/app.js */
+
+/*! ./public/about/style/style.css */
+
+/*! import() */
+
+/*!*****************************!*\
+  !*** ./src/client/about.js ***!
+  \*****************************/
