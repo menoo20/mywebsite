@@ -1,3 +1,3 @@
-/*! For license information please see src_client_public_js_typeIt_js.bundle.js.LICENSE.txt */
+/*! For license information please see src_client_public_js_typeIt_js.js.LICENSE.txt */
 (self.webpackChunkmyportfolio3=self.webpackChunkmyportfolio3||[]).push([["src_client_public_js_typeIt_js"],{"./src/client/public/js/typeIt.js":()=>{new TypeIt("#companionMethods",{speed:100,waitUntilVisible:!0,loop:!0,loopDelay:0}).type("Currt",{delay:300}).move(-1).type("en").move(null,{to:"END"}).type(": Frontnd").pause(300).move(-2).type("E").move(2).type(" Developer  👋").move(null,{to:"END",delay:1300}).pause(300).move(null,{to:"END"}).delete(40).pause(100).type("Going: React Dev 😍").move(null,{to:"END",delay:1300}).delete(35).type("Need: It's Complicated 😅").move(null,{to:"END",delay:1300}).go()}}]);
-//# sourceMappingURL=src_client_public_js_typeIt_js.bundle.js.map
+//# sourceMappingURL=src_client_public_js_typeIt_js.js.map
