@@ -1,0 +1,9 @@
+/*! ./public/success/js/app.js */
+
+/*! ./public/success/style/style.css */
+
+/*! import() */
+
+/*!*******************************!*\
+  !*** ./src/client/success.js ***!
+  \*******************************/
