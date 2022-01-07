@@ -1,3 +1,0 @@
-/*! For license information please see src_client_public_index_js_loader_js.js.LICENSE.txt */
-(self.webpackChunkmyportfolio3=self.webpackChunkmyportfolio3||[]).push([["src_client_public_index_js_loader_js"],{"./src/client/public/index/js/loader.js":()=>{$((function(e){e(window).on("load",(function(l){e(".loader").delay(2e3).fadeOut("slow"),e("#overlayer").delay(2e3).fadeOut("slow")}))}))}}]);
-//# sourceMappingURL=src_client_public_index_js_loader_js.js.map

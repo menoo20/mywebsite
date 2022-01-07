@@ -1,6 +1,6 @@
-/*! ./public//index/style/style.css */
+/*! ./public/index/js/app.js */
 
-/*! ./public/index/js/loader.js */
+/*! ./public/index/style/style.css */
 
 /*! import() */
 
