@@ -1,5 +1,3 @@
-/*! ./global/menu.js */
-
 /*! ./public/skills/js/app.js */
 
 /*! ./public/skills/style/style.css */

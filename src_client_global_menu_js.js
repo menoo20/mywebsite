@@ -1,2 +1,0 @@
-/*! For license information please see src_client_global_menu_js.js.LICENSE.txt */
-(self.webpackChunkmyportfolio3=self.webpackChunkmyportfolio3||[]).push([["src_client_global_menu_js"],{"./src/client/global/menu.js":()=>{}}]);

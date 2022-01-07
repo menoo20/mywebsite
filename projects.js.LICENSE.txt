@@ -1,5 +1,3 @@
-/*! ./global/menu.js */
-
 /*! ./public/projects/style/style.css */
 
 /*! import() */
