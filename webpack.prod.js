@@ -10,9 +10,18 @@ const WorkboxPlugin = require('workbox-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-    entry: './src/client/index.js',
+    entry:{
+        index: './src/client/index.js',
+        about: './src/client/about.js',
+        skills: './src/client/skills.js',
+        projects: './src/client/projects.js',
+        certificates: './src/client/certificates.js',
+        contact: './src/client/contact.js',
+        success: "./src/client/success.js"
+
+    },
     output: {
-        filename:"bundle.js",
+        filename: '[name].js',
         path: path.resolve(__dirname, "dist"),
         assetModuleFilename: 'images/[hash][ext][query]'
     },
@@ -47,7 +56,38 @@ module.exports = {
 plugins: [
     new htmlWebpackPlugin({
         template:"index.html",
- 
+        filename: "index.html",
+        chunks: ["index"],
+    }),
+    new htmlWebpackPlugin({
+        template: "about.html",
+        filename: "about.html",
+        chunks: ["about"],
+    }),
+    new htmlWebpackPlugin({
+        template: "skills.html",
+        filename: "skills.html",
+        chunks: ["skills"],
+    }),
+    new htmlWebpackPlugin({
+        template: "projects.html",
+        filename: "projects.html",
+        chunks: ["projects"],
+    }),
+    new htmlWebpackPlugin({
+        template: "certificates.html",
+        filename: "certificates.html",
+        chunks: ["certificates"],
+    }),
+    new htmlWebpackPlugin({
+        template: "contact.html",
+        filename: "contact.html",
+        chunks: ["contact"],
+    }),
+    new htmlWebpackPlugin({
+        template: "success.html",
+        filename: "success.html",
+        chunks: ["success"],
     }),
     new CleanWebpackPlugin({
         cleanOnceBeforeBuildPatterns: [path.join(__dirname, "dist/**/*")],
