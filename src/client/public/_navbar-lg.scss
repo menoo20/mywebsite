@@ -1,0 +1,149 @@
+@font-face {
+  font-weight: normal;
+  font-display: swap;
+  font-family: "Adinda Melia";
+  src: url("https://dineshbalaji.in/fonts/adinda-melia.regular.otf");
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width:90%;
+    margin: 0 auto;
+    margin-top: 20px;
+
+
+    h1{
+        font-size: 22px;
+    margin-bottom: 0.8rem;
+
+    }
+    .nav-header{
+        text-decoration: none;
+        color: $third-primary;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            color: $assist;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+    ul{
+        display:flex;
+        list-style: none;
+
+        li{
+           padding: 0 30px;
+          
+            a{
+                text-decoration: none;
+                font-family: "Adinda Melia";
+                font-size: 14px;
+                font-weight: bold;
+                color: $third-primary;
+                text-transform: capitalize;
+                transition: all 0.3s ease-in-out;
+                letter-spacing: 2px;
+                &:hover{
+                    color: $assist;
+                    transform:scale(1.02);
+                    transition: all 0.3s ease-in-out;
+                    letter-spacing:4px;
+                }
+            }
+        }
+
+       
+    }
+    // #############################################################################################
+    @import "mixins";
+@import "variables";
+
+
+.menu-toggler{
+  color: #cc8d4a;
+  align-self: flex-start;
+  img{
+    @include for-size(tablet-portrait-down){
+      width: 45px;
+    }
+  }
+}
+.offcanvas{
+  
+  background: rgba(255, 255, 255, 0.05);
+  // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  .offcanvas-header{
+
+      a{
+          position: relative;
+          color: $assist;
+          cursor: pointer;
+       &::before{
+         content:"";
+         position: absolute;
+         width: 90%;
+         height: 80%;
+         top: 2px;
+         left: 2px;
+         background: $third-primary;
+         border-radius:50%;
+         z-index: -1;
+       }  
+  }
+  }
+
+  .menu-toggler{
+      left: 0;
+      top: 0;
+  }
+  
+      border-right: none;
+  
+}
+
+
+.offcanvas-body{
+    .container {
+        padding:20px;
+
+          
+          h1 {
+            color: white;
+            text-align: center;
+            margin-top: 1em;
+          }
+          
+        
+          .small-screens-menu{
+            li{
+              a{
+                color: rgba(white, 0.6);
+                color: $assist;
+                font-family: $header-font;
+                font-size: 20px;
+                transition: all 0.2s ease-in-out;
+                text-transform: capitalize;
+                padding: 15px;
+                @include for-size(tablet-portrait-up){
+                  font-size:20px;
+                }
+                &:hover{
+                  color: #fff;
+                  transform: scale(1.01);
+                  transition: all 0.2s ease-in-out;
+                  letter-spacing:4px;
+                }
+              }
+            }
+            
+          }
+    }
+    
+}
+// #########################################################################################################################
+}

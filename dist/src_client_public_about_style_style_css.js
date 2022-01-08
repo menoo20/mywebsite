@@ -1,0 +1,2 @@
+/*! For license information please see src_client_public_about_style_style_css.js.LICENSE.txt */
+"use strict";(self.webpackChunkmyportfolio3=self.webpackChunkmyportfolio3||[]).push([["src_client_public_about_style_style_css"],{"./src/client/public/about/style/style.css":(s,l,t)=>{t.r(l)}}]);

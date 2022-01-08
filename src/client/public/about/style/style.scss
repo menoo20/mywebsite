@@ -1,0 +1,21 @@
+@import "../../globals";
+@import "about";
+@import "../../mixins";
+@import "../../bsCarousel";
+@import "../../navbar-lg";
+
+
+
+body{
+    display: block !important;
+    background-color: #330033;
+
+
+
+
+    section{
+        opacity: 1;
+        transition: opacity 2.3s ease-in-out;
+
+    }
+}

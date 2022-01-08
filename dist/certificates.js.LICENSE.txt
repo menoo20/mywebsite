@@ -1,0 +1,9 @@
+/*! ./public/certificates/js/app.js */
+
+/*! ./public/certificates/style/style.css */
+
+/*! import() */
+
+/*!************************************!*\
+  !*** ./src/client/certificates.js ***!
+  \************************************/

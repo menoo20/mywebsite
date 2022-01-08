@@ -1,0 +1,371 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --ti-cursor-color: rgb(172, 21, 144);
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #fff;
+  background-color: black;
+  overflow-x: hidden;
+  padding-right: 0 !important;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 60px 0;
+  opacity: 0;
+  min-height: 100vh;
+}
+
+.row > * {
+  -ms-flex-negative: 1 !important;
+      flex-shrink: 1 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Exo 2", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+p {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+i.fa {
+  line-height: 0.8;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background-image: -webkit-gradient(linear, left top, right top, from(#330033), color-stop(#b128b1), to(transparent));
+  background-image: linear-gradient(to right, #330033, #b128b1, transparent);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #EF2F88;
+  border-radius: 80px;
+  -webkit-box-shadow: inset 0 0 0px 2px white;
+          box-shadow: inset 0 0 0px 2px white;
+}
+
+#about {
+  background-color: #330033;
+}
+
+#about.arabic {
+  opacity: 0;
+  -webkit-transition: opacity 1.5s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
+}
+
+#about.english {
+  -webkit-transition: opacity 1.5s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
+}
+
+@font-face {
+  #about {
+    font-weight: normal;
+    font-display: swap;
+    font-family: "Adinda Melia";
+    src: url("https://dineshbalaji.in/fonts/adinda-melia.regular.otf");
+  }
+}
+
+#about.arabic {
+  display: none;
+}
+
+#about .flags {
+  right: 10px;
+  top: 20px;
+}
+
+#about .flags img {
+  width: 27px;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 427px) {
+  #about .flags img {
+    width: 23px;
+  }
+}
+
+#about .flags.arabic {
+  left: 10px;
+}
+
+#about .about-img .js-tilt-glare {
+  border-radius: 50%;
+}
+
+#about .about-img img {
+  border-radius: 50%;
+  padding: 4px;
+  border: 3px solid #fff;
+  cursor: pointer;
+}
+
+#about .about-img img:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+#about .about-content.arabic h1, #about .about-content.arabic p {
+  font-family: 'El Messiri', sans-serif;
+}
+
+#about .about-content .title h1.arabic {
+  letter-spacing: 0;
+}
+
+@media (max-width: 427px) {
+  #about .about-content .title small {
+    display: block;
+  }
+}
+
+#about .about-content p {
+  line-height: 2rem;
+  letter-spacing: .05rem;
+}
+
+#about .about-content p.arabic {
+  letter-spacing: 0;
+  word-spacing: .2rem;
+}
+
+#about .about-content p:not(.arabic):first-letter {
+  float: left;
+  font-size: 45px;
+  line-height: 1;
+  font-weight: bold;
+  margin-right: 9px;
+}
+
+@media (max-width: 427px) {
+  #about .about-content p {
+    font-size: 11px;
+  }
+}
+
+body {
+  display: block !important;
+  opacity: 1;
+  -webkit-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+}
+
+body section {
+  opacity: 1;
+  -webkit-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+}
+
+.slide .carousel-indicators {
+  bottom: -63px;
+}
+
+.slide .carousel-indicators button {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  padding: 0;
+  margin-right: 5px;
+  margin-left: 5px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #ac1590;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  -webkit-transition: opacity .6s ease;
+  transition: opacity .6s ease;
+}
+
+@font-face {
+  font-weight: normal;
+  font-display: swap;
+  font-family: "Adinda Melia";
+  src: url("https://dineshbalaji.in/fonts/adinda-melia.regular.otf");
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+nav h1 {
+  font-size: 22px;
+  margin-bottom: 0.8rem;
+}
+
+nav .nav-header {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+nav .nav-header:hover {
+  color: #ac1590;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 0 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Adinda Melia";
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: capitalize;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 2px;
+}
+
+nav ul li a:hover {
+  color: #ac1590;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 4px;
+}
+
+nav .menu-toggler {
+  color: #cc8d4a;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+@media (max-width: 599px) {
+  nav .menu-toggler img {
+    width: 45px;
+  }
+}
+
+nav .offcanvas {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-right: none;
+}
+
+nav .offcanvas .offcanvas-header a {
+  position: relative;
+  color: #ac1590;
+  cursor: pointer;
+}
+
+nav .offcanvas .offcanvas-header a::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 80%;
+  top: 2px;
+  left: 2px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+nav .offcanvas .menu-toggler {
+  left: 0;
+  top: 0;
+}
+
+nav .offcanvas-body .container {
+  padding: 20px;
+}
+
+nav .offcanvas-body .container h1 {
+  color: white;
+  text-align: center;
+  margin-top: 1em;
+}
+
+nav .offcanvas-body .container .small-screens-menu li a {
+  color: rgba(255, 255, 255, 0.6);
+  color: #ac1590;
+  font-family: "Exo 2", sans-serif;
+  font-size: 20px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-transform: capitalize;
+  padding: 15px;
+}
+
+@media (min-width: 600px) {
+  nav .offcanvas-body .container .small-screens-menu li a {
+    font-size: 20px;
+  }
+}
+
+nav .offcanvas-body .container .small-screens-menu li a:hover {
+  color: #fff;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  letter-spacing: 4px;
+}
+
+body {
+  display: block !important;
+  background-color: #330033;
+}
+
+body section {
+  opacity: 1;
+  -webkit-transition: opacity 2.3s ease-in-out;
+  transition: opacity 2.3s ease-in-out;
+}
+/*# sourceMappingURL=style.css.map */

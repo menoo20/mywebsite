@@ -1,0 +1,667 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --ti-cursor-color: rgb(172, 21, 144);
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #fff;
+  background-color: black;
+  overflow-x: hidden;
+  padding-right: 0 !important;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 60px 0;
+  opacity: 0;
+  min-height: 100vh;
+}
+
+.row > * {
+  -ms-flex-negative: 1 !important;
+      flex-shrink: 1 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Exo 2", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+p {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+i.fa {
+  line-height: 0.8;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background-image: -webkit-gradient(linear, left top, right top, from(#330033), color-stop(#b128b1), to(transparent));
+  background-image: linear-gradient(to right, #330033, #b128b1, transparent);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #EF2F88;
+  border-radius: 80px;
+  -webkit-box-shadow: inset 0 0 0px 2px white;
+          box-shadow: inset 0 0 0px 2px white;
+}
+
+#contact {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(rgba(0, 0, 0, 0.2)), to(black));
+  background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.2), black);
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url(../../../../../images/bg-contacts.jpg);
+  background-position: center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+@media (max-width: 1024px) {
+  #contact::before {
+    background-attachment: scroll !important;
+  }
+}
+
+#contact a.arrow-link {
+  width: 40px;
+  height: 40px;
+  bottom: 0;
+  right: 10px;
+  font-size: 32px;
+  border-radius: 50%;
+  background-color: transparent;
+  background-image: linear-gradient(45deg, #360449, #35044931, red);
+  opacity: 0.4;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#contact a.arrow-link .up-arrow {
+  color: #fff;
+  height: 40px;
+  position: relative;
+}
+
+#contact a.arrow-link .up-arrow i {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 21%;
+}
+
+#contact a.arrow-link:hover {
+  opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#contact .section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+#contact .contact-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
+  max-width: 840px;
+  /* Left contact page */
+  /* Begin Right Contact Page */
+}
+
+@media (max-width: 599px) {
+  #contact .contact-wrapper {
+    float: none;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 900px) {
+  #contact .contact-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+#contact .contact-wrapper form.form-horizontal {
+  /*float: left;*/
+  max-width: 400px;
+  width: 95%;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+}
+
+@media (max-width: 900px) {
+  #contact .contact-wrapper form.form-horizontal {
+    margin: 0 auto;
+  }
+}
+
+#contact .contact-wrapper form .form-group {
+  margin-bottom: 15px;
+}
+
+#contact .contact-wrapper form .form-control,
+#contact .contact-wrapper form textarea {
+  max-width: 400px;
+  background-color: transparent;
+  color: #fff;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0 0 0px 0px transparent;
+          box-shadow: 0 0 0px 0px transparent;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#contact .contact-wrapper form .form-control:focus,
+#contact .contact-wrapper form textarea:focus {
+  outline: none !important;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.6);
+          box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.6);
+  border-radius: 0.25rem;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+@media (max-width: 599px) {
+  #contact .contact-wrapper form .form-control,
+  #contact .contact-wrapper form textarea {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 427px) {
+  #contact .contact-wrapper form .form-control,
+  #contact .contact-wrapper form textarea {
+    width: 95%;
+  }
+}
+
+#contact .contact-wrapper form button {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+
+#contact .contact-wrapper form button:hover {
+  background-color: #000;
+  border: 1px solid #000;
+  -webkit-transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#contact .contact-wrapper form button.send-button {
+  margin-top: 15px;
+  height: 34px;
+  width: 400px;
+  overflow: hidden;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+@media (max-width: 427px) {
+  #contact .contact-wrapper form button.send-button {
+    width: 95%;
+    max-width: 400px;
+  }
+}
+
+#contact .contact-wrapper form button.send-button .alt-send-button {
+  width: 400px;
+  height: 34px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+@media (max-width: 427px) {
+  #contact .contact-wrapper form button.send-button .alt-send-button {
+    width: 100%;
+    padding-right: 13px;
+  }
+}
+
+#contact .contact-wrapper form button.send-button .alt-send-button i {
+  padding-right: 25px;
+}
+
+@media (max-width: 427px) {
+  #contact .contact-wrapper form button.send-button .alt-send-button i {
+    padding-left: 25px;
+  }
+}
+
+#contact .contact-wrapper form button.send-button .alt-send-button .send-text {
+  display: block;
+  margin-top: 2px;
+  font: "Exo 2", sans-serif, sans-serif;
+  letter-spacing: 2px;
+  padding-right: 25px;
+}
+
+@media (max-width: 427px) {
+  #contact .contact-wrapper form button.send-button .alt-send-button .send-text {
+    padding-right: 0;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 325px) {
+  #contact .contact-wrapper form button.send-button .alt-send-button .send-text {
+    padding-right: 0;
+    padding-left: 10px;
+  }
+}
+
+#contact .contact-wrapper form button.send-button:hover .alt-send-button {
+  -webkit-transform: translate3d(0px, -29px, 0px);
+          transform: translate3d(0px, -29px, 0px);
+}
+
+#contact .contact-wrapper .direct-contact-container {
+  max-width: 400px;
+  /* Location, Phone, Email Section */
+  /* Social Media Icons */
+}
+
+@media (max-width: 599px) {
+  #contact .contact-wrapper .direct-contact-container {
+    float: none;
+    margin: 0 auto;
+    margin-top: 60px;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 900px) {
+  #contact .contact-wrapper .direct-contact-container {
+    margin: 0 auto;
+    margin-top: 60px;
+    max-width: 300px;
+  }
+}
+
+#contact .contact-wrapper .direct-contact-container .contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
+}
+
+#contact .contact-wrapper .direct-contact-container .contact-list .list-item {
+  line-height: 4;
+  color: #fff;
+}
+
+#contact .contact-wrapper .direct-contact-container .contact-list .list-item i::before {
+  vertical-align: bottom;
+}
+
+#contact .contact-wrapper .direct-contact-container .contact-list .list-item .contact-text {
+  font: 300 18px 'Lato', sans-serif;
+  letter-spacing: 1.9px;
+  color: #fff;
+}
+
+#contact .contact-wrapper .direct-contact-container .contact-list .list-item .contact-text a {
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+@media (max-width: 427px) {
+  #contact .contact-wrapper .direct-contact-container .contact-list .list-item .contact-text a {
+    font-size: 13px;
+  }
+}
+
+#contact .contact-wrapper .direct-contact-container .contact-list .list-item .contact-text a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#contact .contact-wrapper .direct-contact-container .contact-list .list-item .contact-text.place {
+  margin-left: 50px;
+}
+
+#contact .contact-wrapper .direct-contact-container .contact-list .list-item .contact-text.phone {
+  margin-left: 42px;
+}
+
+#contact .contact-wrapper .direct-contact-container .contact-list .list-item .contact-text.gmail {
+  margin-left: 41px;
+}
+
+#contact .contact-wrapper .direct-contact-container .social-media-list {
+  position: relative;
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media (max-width: 599px) {
+  #contact .contact-wrapper .direct-contact-container .social-media-list {
+    left: 0;
+  }
+}
+
+#contact .contact-wrapper .direct-contact-container .social-media-list li {
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 10px 3px;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+@media (max-width: 599px) {
+  #contact .contact-wrapper .direct-contact-container .social-media-list li {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  #contact .contact-wrapper .direct-contact-container .social-media-list li {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+  }
+}
+
+#contact .contact-wrapper .direct-contact-container .social-media-list li a {
+  color: #fff;
+}
+
+#contact .contact-wrapper .direct-contact-container .social-media-list li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-box-shadow: 0 0 0 1px #fff;
+          box-shadow: 0 0 0 1px #fff;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  z-index: -1;
+}
+
+@media (max-width: 599px) {
+  #contact .contact-wrapper .direct-contact-container .social-media-list li::after {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+  }
+}
+
+@media (max-width: 900px) {
+  #contact .contact-wrapper .direct-contact-container .social-media-list li::after {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+#contact .contact-wrapper .direct-contact-container .social-media-list li:hover {
+  background-color: #fff;
+}
+
+#contact .contact-wrapper .direct-contact-container .social-media-list li:hover:after {
+  opacity: 1;
+  -webkit-transform: scale(1.12);
+          transform: scale(1.12);
+  -webkit-transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+          transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+}
+
+#contact .contact-wrapper .direct-contact-container .social-media-list li:hover a {
+  color: #000;
+}
+
+#contact .contact-wrapper .direct-contact-container .copyright {
+  font: 200 14px 'Oswald', sans-serif;
+  color: #999;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#contact .contact-wrapper .direct-contact-container hr {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+@font-face {
+  font-weight: normal;
+  font-display: swap;
+  font-family: "Adinda Melia";
+  src: url("https://dineshbalaji.in/fonts/adinda-melia.regular.otf");
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+nav h1 {
+  font-size: 22px;
+  margin-bottom: 0.8rem;
+}
+
+nav .nav-header {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+nav .nav-header:hover {
+  color: #ac1590;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 0 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Adinda Melia";
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: capitalize;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 2px;
+}
+
+nav ul li a:hover {
+  color: #ac1590;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 4px;
+}
+
+nav .menu-toggler {
+  color: #cc8d4a;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+@media (max-width: 599px) {
+  nav .menu-toggler img {
+    width: 45px;
+  }
+}
+
+nav .offcanvas {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-right: none;
+}
+
+nav .offcanvas .offcanvas-header a {
+  position: relative;
+  color: #ac1590;
+  cursor: pointer;
+}
+
+nav .offcanvas .offcanvas-header a::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 80%;
+  top: 2px;
+  left: 2px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+nav .offcanvas .menu-toggler {
+  left: 0;
+  top: 0;
+}
+
+nav .offcanvas-body .container {
+  padding: 20px;
+}
+
+nav .offcanvas-body .container h1 {
+  color: white;
+  text-align: center;
+  margin-top: 1em;
+}
+
+nav .offcanvas-body .container .small-screens-menu li a {
+  color: rgba(255, 255, 255, 0.6);
+  color: #ac1590;
+  font-family: "Exo 2", sans-serif;
+  font-size: 20px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-transform: capitalize;
+  padding: 15px;
+}
+
+@media (min-width: 600px) {
+  nav .offcanvas-body .container .small-screens-menu li a {
+    font-size: 20px;
+  }
+}
+
+nav .offcanvas-body .container .small-screens-menu li a:hover {
+  color: #fff;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  letter-spacing: 4px;
+}
+
+h1.section-header {
+  font-family: "Adinda Melia";
+}
+
+body {
+  display: block !important;
+  opacity: 1;
+  -webkit-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+}
+
+body section {
+  opacity: 1;
+  -webkit-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+}
+/*# sourceMappingURL=style.css.map */

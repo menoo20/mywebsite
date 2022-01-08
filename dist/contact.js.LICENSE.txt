@@ -1,0 +1,9 @@
+/*! ./public/contact/js/app.js */
+
+/*! ./public/contact/style/style.css */
+
+/*! import() */
+
+/*!*******************************!*\
+  !*** ./src/client/contact.js ***!
+  \*******************************/

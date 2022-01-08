@@ -1,0 +1,16 @@
+@import "../../globals";
+@import "../../variables";
+@import "certificates";
+@import "../../mixins";
+@import "../../bsCarousel";
+@import "../../navbar-lg";
+
+body{
+    display: block !important;
+   
+    section{
+        opacity: 1;
+        transition: opacity 2.3s ease-in-out;
+
+    }
+}

@@ -1,0 +1,9 @@
+/*! ./public/index/js/app.js */
+
+/*! ./public/index/style/style.css */
+
+/*! import() */
+
+/*!*****************************!*\
+  !*** ./src/client/index.js ***!
+  \*****************************/

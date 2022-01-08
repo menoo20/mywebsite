@@ -1,0 +1,52 @@
+h5{
+    letter-spacing: 0;
+    font-weight: bold;
+    margin: 0;
+    font-family: "Adinda Melia";
+    text-transform:capitalize;
+    color: #fff;
+}
+
+.neo-button {
+    display:flex;
+    position: relative;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    max-width:170px;
+    cursor:pointer;
+    padding: 20px 70px;
+    margin: auto;
+    border-radius:30px;
+    background: #ac1590;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .12), inset -4px -5px 12px rgba(0, 0, 0, .12), inset -5px -6px 12px rgba(0, 0, 0,.08), inset 0px -6px 18px rgba(0, 0, 0, .06), 2px 1px 8px rgba(172, 21, 144, .32), 3px 2px 12px rgba(172, 21, 144, .15),
+     4px 4px 18px rgba(172, 21, 144, .08);
+    transition: transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    &::after {
+        content: "";
+        position: absolute;
+        left: 80%;
+        top: 25%;
+        transform: translate(-50%, -50%) rotateY(45deg);
+        background: #fff;
+        width: 25%;
+        height: 15%;
+        filter: blur(5px);
+    }
+  }
+  
+  .neo-button button:hover {
+    cursor:pointer;
+  }
+  
+  .neo-button button {
+    border: none;
+    background-color:transparent;
+    font-size:20px;
+    outline:none;
+  }
+  
+  .neo-button:active {
+    box-shadow:inset 10px 10px 10px rgba(70, 5, 70, 0.4),inset -10px -10px 12px rgba(140, 15, 129, 0.6);
+    transform:scale(0.9);
+  }

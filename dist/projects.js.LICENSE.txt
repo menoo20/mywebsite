@@ -1,0 +1,9 @@
+/*! ./public/projects/js/app */
+
+/*! ./public/projects/style/style.css */
+
+/*! import() */
+
+/*!********************************!*\
+  !*** ./src/client/projects.js ***!
+  \********************************/

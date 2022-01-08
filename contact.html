@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat+Alternates:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+     <!-- Bootstrap framework -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+     <title>Ameen</title>
+</head>
+
+<body style="display:none; opacity: 0">
+
+  <!-- ################################################################################################### -->
+                                     <!-- navbar    -->
+  <!-- ################################################################################################### -->
+
+  <nav>
+   <h1 ><a class="nav-header" href="index">Ameen</a></h1>
+   <ul class="navbar d-none d-lg-flex">
+         <li><a href="about">about</a></li>
+         <li><a href="skills">skills</a></li>
+         <li><a href="projects">projects</a></li>
+         <li><a href="certificates">certificates</a></li>
+         <li><a href="contact">contact</a></li>
+   </ul>
+  
+   <div class="menu-toggler toggler-one text-white d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+     <i class="fa-solid fas cookie fa-bars fa-2x" ></i>
+   </div>
+   <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+     <div class="offcanvas-header justify-content-md-center">
+       <h1 class="offcanvas-title" id="offcanvasExampleLabel ">Home</h1>
+           <a class="close-button d-md-none" data-bs-dismiss="offcanvas" aria-label="Close">
+             <i class="fas fa-times-circle fa-2x"></i>
+           </a>
+     </div>
+     <div class="offcanvas-body d-flex align-items-sm-center align-items-lg-start">
+       <div class="container d-flex">
+ <!-- ###################################################################################################################
+     tablet menu start
+ ################################################################################################################### -->
+   
+         <div class="small-screens-menu d-flex align-self-center mt-5">
+             <ul class="row text-center justify-content-center align-items-center menu-list list-unstyled ">
+              <li class=" my-4"><a href="about">about</a></li>
+              <li class=" my-4"><a href="skills">skills</a></li>
+              <li class=" my-4"><a href="projects">projects</a></li>
+              <li class=" my-4"><a href="certificates">certificates</a></li>
+              <li class=" my-4"><a href="contact">contact</a></li>
+             </ul>
+         </div>
+       </div>
+     </div>
+   </div>
+ 
+ </nav>
+<!-- 
+   ####################################################################################################
+   #################################################################################################### -->
+
+      <!-- ###################################################################################################################
+                        contact me section
+      ############################################################################################################################## -->
+      <section id="contact" class="position-relative">
+        <h1 class="section-header pt-5">Contact Me</h1>
+        
+        <div class="contact-wrapper pt-4">
+        <!-- <div class="container d-flex justify-content-center justify-content-lg-between align-items-baseline"> -->
+        <!-- Left contact page --> 
+          
+          <form id="contact-form" class="form-horizontal text-center" role="form" method="POST" action="https://www.actionforms.io/e/r/ameenwebdev"
+          data-aos="fade-right" 
+          data-aos-duration="1500"
+          data-aos-delay="300"
+          data-aos-easing="linear"
+          data-aos-anchor-placement="center-bottom"
+          >
+             
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="text" class="form-control" id="name" placeholder="NAME" name="name"  required>
+              </div>
+            </div>
+      
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email"  required>
+              </div>
+            </div>
+      
+            <textarea class="form-control" rows="8" placeholder="MESSAGE" name="message" required></textarea>
+            
+            <button class="btn send-button" id="submit" type="submit" value="SEND">
+              <div class="alt-send-button">
+                <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+              </div>
+            </button>
+            
+          </form>
+          
+        <!-- Left contact page --> 
+          
+            <div class="direct-contact-container" 
+            data-aos="fade-left" 
+            data-aos-duration="1500"
+            data-aos-delay="300"
+            data-aos-easing="linear"
+            data-aos-anchor-placement="top-bottom"
+            >
+      
+              <ul class="contact-list">
+                <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Cairo, Egypt</span></i></li>
+                
+                <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:+20-1053752755" title="Give me a call">(02) 01553752755</a></span></i></li>
+                
+                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:contact@ameenwebdev.com" title="Send me an email">contact@ameenwebdev.com</a></span></i></li>
+                
+              </ul>
+      
+              <hr>
+              <ul class="social-media-list">
+                <li 
+                ><a href="https://github.com/menoo20" target="_blank" aria-hidden="true" class="contact-icon">
+                  <i class="fa fa-github" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="https://wa.me/0201065868177" target="_blank" class="contact-icon">
+                  <i class="fab fa-whatsapp fa-lg" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/devameen/" target="_blank" class="contact-icon">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="https://www.facebook.com/mohammed.amen.7/" target="_blank" class="contact-icon">
+                  <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </li>       
+              </ul>
+              <hr>
+            </div>
+        </div>
+      </section>  
+     <!--Aos js -->
+    <script src="https://kit.fontawesome.com/a1868a2f1c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+       </script>
+</body>
+</html>
+
+<!-- https://formspree.io/f/mdobkbyq -->

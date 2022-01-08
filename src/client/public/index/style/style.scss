@@ -1,0 +1,13 @@
+@import "index";
+@import "../../globals";
+@import "../../variables";
+@import "../../navbar-lg";
+
+
+
+h1,h2,h3,h4,h5,h6,span{
+    font-family:  $header-font;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
+}

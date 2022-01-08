@@ -1,0 +1,9 @@
+/*! ./public/skills/js/app.js */
+
+/*! ./public/skills/style/style.css */
+
+/*! import() */
+
+/*!******************************!*\
+  !*** ./src/client/skills.js ***!
+  \******************************/

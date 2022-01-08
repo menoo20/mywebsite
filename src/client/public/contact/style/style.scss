@@ -1,0 +1,21 @@
+@import "../../globals";
+@import "../../variables";
+@import "contact";
+@import "../../mixins";
+@import "../../navbar-lg";
+
+
+h1.section-header{
+    font-family: "Adinda Melia";
+}
+
+body{
+    display: block !important;
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+    section{
+      opacity :1;
+      transition: opacity 2s ease-in-out;
+  
+    }
+  }
